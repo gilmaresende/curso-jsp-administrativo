@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<%@include file="config.jsp" %>
 <html lang="zxx">
 
     <head>
@@ -49,9 +51,9 @@
             <div class="om-widget">
 
                 <ul>
-                    <li><i class="icon_mail_alt"></i>dev@condelar.com</li>
-                    <li><i class="fa fa-whatsapp"></i>(31) 98312-3456</li> 
-                    <li><i class="fa fa-whatsapp"></i>31 3574-1234</li>
+                    <li><i class="icon_mail_alt"></i><%=email %></li>
+                    <li><i class="fa fa-whatsapp"></i><%=whatsapp %></li> 
+                    <li><i class="fa fa-whatsapp"></i><%=telFixo %></li>
                 </ul>
                 <a href="imoveis.jsp" class="hw-btn">Ver Imóveis</a>
             </div>
@@ -78,8 +80,9 @@
                         <div class="col-lg-10">
                             <div class="ht-widget">
                                 <ul>
-                                    <li><i class="icon_mail_alt"></i>dev@condelar.com</li>
-                                    <li><i class="fa fa-whatsapp"></i>(31) 98312-3456<span>31 3574-1234</span></li>
+                                    <li><i class="icon_mail_alt"></i><%=email%></li>
+                                    <li><i class="fa fa-whatsapp"></i><%=whatsapp %>
+                                        <span><%=telFixo %></span></li>
                                 </ul>
                                 <a href="imoveis.jsp" class="hw-btn">Ver Imóveis</a>
                             </div>
