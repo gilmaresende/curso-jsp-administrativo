@@ -146,14 +146,15 @@
                 </div>
                 <div id="priceCompra" class="price-range-wrap sm-width">
                     <div class="price-text">
-                        <label for="priceRange">Valor:</label>
+                        <label for="priceRange">Valor Compra:</label>
                         <input type="text" id="priceRange" readonly>
                     </div>
                     <div id="price-range" class="slider"></div>
                 </div>
-                <div id="priceAluguel"class="price-range-wrap sm-width">
+
+                <div id="priceAluguel" class="price-range-wrap sm-width">
                     <div class="price-text">
-                        <label for="priceRange">Valor:</label>
+                        <label for="priceRange">Valor Aluguel:</label>
                         <input type="text" id="priceRangeAluguel" readonly>
                     </div>
                     <div id="price-range-aluguel" class="slider"></div>
@@ -765,3 +766,23 @@
 <!-- Contact Section End -->
 
 <jsp:include page="rodape.jsp"/>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#priceAluguel').hide();
+        $('#priceCompra').show();
+
+        $('#cb-rent').click()(function (event) {
+            $('#priceAluguel').hide();
+            $('#priceCompra').show();
+        });
+
+        $('#cb-sale').click()(function (event) {
+            $('#priceAluguel').show();
+            $('#priceCompra').hide();
+        });
+
+    });
+
+
+</script>

@@ -211,7 +211,7 @@
 		Range Wrap
 	--------------------- */
 
-    //room size
+    //room size (compra)
     $("#roomsize-range").slider({
         range: true,
         min: 0,
@@ -219,30 +219,17 @@
         step: 200,
         values: [200, 1200],
         slide: function (event, ui) {
-            $("#roomsizeRange").val("[" + ui.values[0] + "-" + ui.values[1] + "]");
+            $("#roomsizeRange").val("[" + ui.values[0] + "-" + ui.values[1] + "]" + "");
         }
     });
-    $("#roomsizeRange").val("[" + $("#roomsize-range").slider("values", 0) + "-" + $("#roomsize-range").slider("values", 1) + "]");
+    $("#roomsizeRange").val("[" + $("#roomsize-range").slider("values", 0) + "-" + $("#roomsize-range").slider("values", 1) + "]" + "");
+
 
     //price range
-    $("#price-range").slider({
-        range: true,
-        min: 10000,
-        max: 2000000,
-        step: 10000,
-        values: [10000, 700000],
-        slide: function (event, ui) {
-            $("#priceRange").val("[ " + ui.values[0] + " - " + ui.values[1] + " ]" + " R$");
-        }
-    });
-    $("#priceRange").val("[ " + $("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1) + " ]" + " R$");
-
-
-    //price range aluguel
     $("#price-range-aluguel").slider({
         range: true,
         min: 0,
-        max: 1500,
+        max: 2500,
         step: 100,
         values: [400, 1200],
         slide: function (event, ui) {
@@ -251,6 +238,20 @@
     });
     $("#priceRangeAluguel").val("[ " + $("#price-range-aluguel").slider("values", 0) + " - " + $("#price-range-aluguel").slider("values", 1) + " ]" + " R$");
 
+ 
+
+    //price range (Aluguel)
+    $("#price-range").slider({
+        range: true,
+        min: 10000,
+        max: 2000000,
+        step: 10000,
+        values: [100000, 700000],
+        slide: function (event, ui) {
+            $("#priceRange").val("[ " + ui.values[0] + " - " + ui.values[1] + " ]" + " R$");
+        }
+    });
+    $("#priceRange").val("[ " + $("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1) + " ]" + " R$");
 
      //Text editor
     $('.texteditor-content').richText();
