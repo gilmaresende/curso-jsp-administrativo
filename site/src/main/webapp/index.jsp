@@ -172,18 +172,18 @@
         <div class="row">
             <div class="col-lg-5">
                 <div class="section-title">
-                    <h4>Latest PROPERTY</h4>
+                    <h4>Ultimos Imóveis</h4>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="property-controls">
                     <ul>
-                        <li data-filter="all">All</li>
-                        <li data-filter=".apart">Apartment</li>
-                        <li data-filter=".house">House</li>
-                        <li data-filter=".office">Office</li>
-                        <li data-filter=".hotel">Hotel</li>
-                        <li data-filter=".restaurent">Restaurent</li>
+                        <li data-filter="todos">Todos</li>
+                        <li data-filter="apartamentos">Apartamentos</li>
+                        <li data-filter="casas">Casas</li>
+                        <li data-filter="escritorios">Escritórios</li>
+                        <li data-filter="lotes">Lotes</li>
+                        <li data-filter="sitios">Sitios</li>
                     </ul>
                 </div>
             </div>
