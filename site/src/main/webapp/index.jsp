@@ -660,7 +660,7 @@
                             <img src="img/testimonial-author/ta-1.jpg" alt="">
                         </div>
                         <div class="ta-text">
-                            <h5>Arise Naieh</h5>
+                            <h5>Arise Naieh Beto</h5>
                             <span>Designer</span>
                             <div class="ta-rating">
                                 <i class="fa fa-star"></i>
@@ -769,15 +769,18 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#priceAluguel').hide();
-        $('#priceCompra').show();
+        $('#priceCompra').hide();
+        $('#priceAluguel').show();
 
-        $('#cb-rent').click()(function (event) {
+        $('#cb-rent').click(function (event) {
+            console.log("1");
             $('#priceAluguel').hide();
             $('#priceCompra').show();
         });
 
-        $('#cb-sale').click()(function (event) {
+        $('#cb-sale').click(function (event) {
+                        console.log("2");
+
             $('#priceAluguel').show();
             $('#priceCompra').hide();
         });
