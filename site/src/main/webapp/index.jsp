@@ -678,8 +678,7 @@
                     </div>
                     <textarea placeholder="Comentário"></textarea>
                     <div align="right">
-                        <button id="btn-cancelar" type="button" class="btn btn-info">Enviar</button>
-                        <button id="btn-enviar" type="button" class="btn btn-info">Enviar</button>
+                        <button id="btn-enviar" type="submit" class="btn btn-info">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -692,8 +691,13 @@
 <script type="text/javascript">
 
     $('#btn-cancelar-dismiss').click(function (event) {
-       $('#listarTodos').click();
+        $('#listarTodos').click();
     });
+
+    $('#btn-enviar').click(function (event) {
+        $('#listarTodos').click();
+    });
+
 
     $(document).ready(function () {
         $('#priceCompra').hide();
@@ -711,8 +715,10 @@
             $('#priceAluguel').show();
             $('#priceCompra').hide();
         });
-
     });
 
 
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+<script src="js/mascara.js"></script>
