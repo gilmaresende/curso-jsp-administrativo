@@ -201,7 +201,7 @@
                         <div class="label">Para Aluguel</div>
                     </div>
                     <div class="pi-text">
-                        <a title="Enviar Mensagem" href="" data-bs-toggle="modal" data-bs-target="#modalMensagemImovel" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        <a title="Enviar Mensagem" href="" data-toggle="modal" data-target="#modalMensagemImovel" class="heart-icon"><span class="icon_heart_alt"></span></a>
                         <div class="pt-price">R$ 889.0<span>/mês</span></div>
                         <h5><a href="#">Apartamento 3 Quartos</a></h5>
                         <p><span class="icon_pin_alt"></span>Endereço do Imóvel</p>
@@ -658,21 +658,31 @@
 <jsp:include page="rodape.jsp"/>
 
 
-<!-- Modal msg imovel-->
-<div class="modal fade" id="modalMensagemImovel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<!-- Modal Mensagem Imovel-->
+<div class="modal fade" data-backdrop="static" id="modalMensagemImovel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalLabel">Enviar Mensagem</h5>
+                <button id="btn-cancelar-dismiss" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
-                ...
+                <form action="#" class="cc-form">
+                    <div class="group-input">
+                        <input type="text" placeholder="Nome">
+                        <input id="telefone" type="text" placeholder="Telefone">
+                        <input type="email" placeholder="Email">
+                        
+                    </div>
+                    <textarea placeholder="Comentário"></textarea>
+                    <div align="right">
+                    <button id="btn-enviar" type="submit" class="site-btn">Enviar</button>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+           
         </div>
     </div>
 </div>
