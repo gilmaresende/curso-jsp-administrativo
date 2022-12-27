@@ -182,12 +182,12 @@
             <div class="col-lg-7">
                 <div class="property-controls">
                     <ul>
-                        <li data-filter="todos">Todos</li>
-                        <li data-filter="apartamentos">Apartamentos</li>
-                        <li data-filter="casas">Casas</li>
-                        <li data-filter="escritorios">Escritórios</li>
-                        <li data-filter="lotes">Lotes</li>
-                        <li data-filter="sitios">Sitios</li>
+                        <li id="listarTodos" data-filter="all">Todos</li>
+                        <li data-filter=".Apartamentos">Apartamentos</li>
+                        <li data-filter="Casas">Casas</li>
+                        <li data-filter="Escritórios">Escritórios</li>
+                        <li data-filter="Lotes">Lotes</li>
+                        <li data-filter="Sitios">Sitios</li>
                     </ul>
                 </div>
             </div>
@@ -674,21 +674,27 @@
                         <input type="text" placeholder="Nome">
                         <input id="telefone" type="text" placeholder="Telefone">
                         <input type="email" placeholder="Email">
-                        
+
                     </div>
                     <textarea placeholder="Comentário"></textarea>
                     <div align="right">
-                    <button id="btn-enviar" type="submit" class="site-btn">Enviar</button>
+                        <button id="btn-cancelar" type="button" class="btn btn-info">Enviar</button>
+                        <button id="btn-enviar" type="button" class="btn btn-info">Enviar</button>
                     </div>
                 </form>
             </div>
-           
+
         </div>
     </div>
 </div>
 
 
 <script type="text/javascript">
+
+    $('#btn-cancelar-dismiss').click(function (event) {
+       $('#listarTodos').click();
+    });
+
     $(document).ready(function () {
         $('#priceCompra').hide();
         $('#priceAluguel').show();
