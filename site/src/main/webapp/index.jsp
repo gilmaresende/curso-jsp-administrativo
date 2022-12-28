@@ -329,49 +329,51 @@
             <div class="col-lg-4 p-0">
                 <div class="feature-property-left">
                     <div class="section-title">
-                        <h4>Feature PROPERTY</h4>
+                        <h4>Categorias</h4>
                     </div>
                     <ul>
-                        <li>Apartment</li>
-                        <li>House</li>
-                        <li>Office</li>
-                        <li>Hotel</li>
-                        <li>Villa</li>
-                        <li>Restaurent</li>
+                        <li>Apartamento</li>
+                        <li>Casa</li>
+                        <li>lotes</li>
+                        <li>Sitíos</li>
+                        <li>Casa Germinada</li>
+                        <li>Terrenos</li>
                     </ul>
-                    <a href="#">View all property</a>
+                    <a href="imoveis.jsp">Ver todos Imóveis</a>
                 </div>
             </div>
             <div class="col-lg-8 p-0">
                 <div class="fp-slider owl-carousel">
+                    <!--inicio do carousel-->
                     <div class="fp-item set-bg" data-setbg="img/feature-property/fp-1.jpg">
                         <div class="fp-text">
-                            <h5 class="title">Home in Merrick Way</h5>
-                            <p><span class="icon_pin_alt"></span> 3 Middle Winchendon Rd, Rindge, NH 03461</p>
-                            <div class="label">For Rent</div>
-                            <h5>$ 289.0<span>/month</span></h5>
+                            <h5 class="title">Casa com 4 quartos</h5>
+                            <p><span class="icon_pin_alt"></span> Localização</p>
+                            <div class="label">Para Alugar</div>
+                            <h5>R$ 989,00<span>/month</span></h5>
                             <ul>
-                                <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                <li><i class="fa fa-object-group"></i> 200m²</li>
                                 <li><i class="fa fa-bathtub"></i> 03</li>
-                                <li><i class="fa fa-bed"></i> 05</li>
+                                <li><i class="fa fa-bed"></i> 04</li>
                                 <li><i class="fa fa-automobile"></i> 01</li>
                             </ul>
                         </div>
                     </div>
                     <div class="fp-item set-bg" data-setbg="img/feature-property/fp-2.jpg">
                         <div class="fp-text">
-                            <h5 class="title">Home in Merrick Way</h5>
-                            <p><span class="icon_pin_alt"></span> 3 Middle Winchendon Rd, Rindge, NH 03461</p>
-                            <div class="label">For Rent</div>
-                            <h5>$ 289.0<span>/month</span></h5>
+                            <h5 class="title">Casa com 4 quartos</h5>
+                            <p><span class="icon_pin_alt"></span> Localização</p>
+                            <div class="label">Para Alugar</div>
+                            <h5>R$ 989,00<span>/month</span></h5>
                             <ul>
                                 <li><i class="fa fa-object-group"></i> 2, 283</li>
                                 <li><i class="fa fa-bathtub"></i> 03</li>
-                                <li><i class="fa fa-bed"></i> 05</li>
+                                <li><i class="fa fa-bed"></i> 04</li>
                                 <li><i class="fa fa-automobile"></i> 01</li>
                             </ul>
                         </div>
                     </div>
+                    <!--final do carousel-->
                 </div>
             </div>
         </div>
@@ -385,12 +387,12 @@
         <div class="row">
             <div class="col-lg-8 col-md-8">
                 <div class="section-title">
-                    <h4>Latest Property</h4>
+                    <h4>Corretores Destaque</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4">
                 <div class="team-btn">
-                    <a href="#"><i class="fa fa-user"></i> ALL counselor</a>
+                    <a href="#"><i class="fa fa-user"></i> Alguns Corretores</a>
                 </div>
             </div>
         </div>
