@@ -1,7 +1,7 @@
 
 <jsp:include page="cabecalho.jsp"/>
 
-
+<%@ include file="config.jsp" %>
 
 
 <!-- Inicio Slideshow  -->
@@ -79,96 +79,7 @@
 </section>
 <!-- Final Slideshow  -->
 
-<!-- Filtro por imoveis -->
-<section class="search-section spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="section-title">
-                    <h4>Qual imóvel esta procutando?</h4>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="change-btn">
-                    <div class="cb-item">
-                        <label for="cb-rent" class="active">
-                            Compra
-                            <input type="radio" id="cb-rent">
-                        </label>
-                    </div>
-                    <div class="cb-item">
-                        <label for="cb-sale">
-                            Aluguel
-                            <input type="radio" id="cb-sale">
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="search-form-content">
-            <!--aula 18-->
-            <form action="#" class="filter-form">
-                <select class="sm-width">
-                    <option value="">Cidade</option>
-                </select>
-                <select class="sm-width">
-                    <option value="">Bairro</option>
-                </select>
-                <select class="sm-width">
-                    <option value="">Imóvel Status</option>
-                    <option value="novo">Novo</option>
-                    <option value="planta">Planta</option>
-                    <option value="usado">Usado</option>
-                </select>
-                <select class="sm-width">
-                    <option value="">Tipo de Imóvel</option>
-                </select>
-                <select class="sm-width">
-                    <option value="">Número de Quartos</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="mais">Mais de 5</option>
-                </select>
-                <select class="sm-width">
-                    <option value="">Vagas Garagens</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="mais">Mais de 5</option>
-                </select>
-                <div class="room-size-range-wrap sm-width">
-                    <div class="price-text">
-                        <label for="roomsizeRange">Tamanho m²:</label>
-                        <input type="text" id="roomsizeRange" readonly>
-                    </div>
-                    <div id="roomsize-range" class="slider"></div>
-                </div>
-                <div id="priceCompra" class="price-range-wrap sm-width">
-                    <div class="price-text">
-                        <label for="priceRange">Valor Compra:</label>
-                        <input type="text" id="priceRange" readonly>
-                    </div>
-                    <div id="price-range" class="slider"></div>
-                </div>
-
-                <div id="priceAluguel" class="price-range-wrap sm-width">
-                    <div class="price-text">
-                        <label for="priceRange">Valor Aluguel:</label>
-                        <input type="text" id="priceRangeAluguel" readonly>
-                    </div>
-                    <div id="price-range-aluguel" class="slider"></div>
-                </div>
-                <button type="button" class="search-btn sm-width">Buscar</button>
-            </form>
-        </div>
-    </div>
-</section>
-<!-- Search Section End -->
+<jsp:include page="filtro-imoveis.jsp"/>
 
 <!-- Property Section Begin -->
 <section class="property-section latest-property-section spad">
@@ -402,7 +313,7 @@
                     <div class="ts-text">
                         <img src="img/team/team-1.jpg" alt="">
                         <h5>Ashton Kutcher</h5>
-                        <span>123-455-688</span>
+                        <span><a class="text-white" target="_blank" href="http://api.whatsapp.com/send?1=pt_BR&phone=<%=whatsappLink%>"><i class="fa fa-whatsapp"></i> <%=whatsapp%> </a>                        </span>
                         <p>Ipsum dolor amet, consectetur adipiscing elit, eiusmod tempor incididunt lorem.</p>
                         <div class="ts-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -417,7 +328,7 @@
                     <div class="ts-text">
                         <img src="img/team/team-2.jpg" alt="">
                         <h5>Ashton Kutcher</h5>
-                        <span>123-455-688</span>
+                        <span><a class="text-white" target="_blank" href="http://api.whatsapp.com/send?1=pt_BR&phone=<%=whatsappLink%>"><i class="fa fa-whatsapp"></i> <%=whatsapp%> </a>                        </span>
                         <p>Ipsum dolor amet, consectetur adipiscing elit, eiusmod tempor incididunt lorem.</p>
                         <div class="ts-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -432,7 +343,7 @@
                     <div class="ts-text">
                         <img src="img/team/team-3.jpg" alt="">
                         <h5>Ashton Kutcher</h5>
-                        <span>123-455-688</span>
+                        <span><a class="text-white" target="_blank" href="http://api.whatsapp.com/send?1=pt_BR&phone=<%=whatsappLink%>"><i class="fa fa-whatsapp"></i> <%=whatsapp%> </a>                        </span>
                         <p>Ipsum dolor amet, consectetur adipiscing elit, eiusmod tempor incididunt lorem.</p>
                         <div class="ts-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -452,32 +363,32 @@
     <div class="cs-item-list">
         <div class="cs-item set-bg" data-setbg="img/categories/cat-1.jpg">
             <div class="cs-text">
-                <h5>Apartment</h5>
-                <span>230 property</span>
+                <h5>Apartamento</h5>
+                <span>230 imóveis</span>
             </div>
         </div>
         <div class="cs-item set-bg" data-setbg="img/categories/cat-2.jpg">
             <div class="cs-text">
-                <h5>Villa</h5>
-                <span>230 property</span>
+                <h5>Cobertura</h5>
+                <span>230 imóveis</span>
             </div>
         </div>
         <div class="cs-item set-bg" data-setbg="img/categories/cat-3.jpg">
             <div class="cs-text">
-                <h5>House</h5>
-                <span>230 property</span>
+                <h5>Casa</h5>
+                <span>230 imóveis</span>
             </div>
         </div>
         <div class="cs-item set-bg" data-setbg="img/categories/cat-4.jpg">
             <div class="cs-text">
-                <h5>Restaurent</h5>
-                <span>230 property</span>
+                <h5>Comercial</h5>
+                <span>230 imóveis</span>
             </div>
         </div>
         <div class="cs-item set-bg" data-setbg="img/categories/cat-5.jpg">
             <div class="cs-text">
-                <h5>Office</h5>
-                <span>230 property</span>
+                <h5>Escritórios</h5>
+                <span>230 imóveis</span>
             </div>
         </div>
     </div>
@@ -490,7 +401,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title">
-                    <h4>What our client says?</h4>
+                    <h4>Alguns de nossos Clientes</h4>
                 </div>
             </div>
         </div>
@@ -572,91 +483,6 @@
 </section>
 <!-- Testimonial Section End -->
 
-<!-- Logo Carousel Begin -->
-<div class="logo-carousel">
-    <div class="container">
-        <div class="lc-slider owl-carousel">
-            <a href="#" class="lc-item">
-                <div class="lc-item-inner">
-                    <img src="img/logo-carousel/lc-1.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="lc-item">
-                <div class="lc-item-inner">
-                    <img src="img/logo-carousel/lc-2.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="lc-item">
-                <div class="lc-item-inner">
-                    <img src="img/logo-carousel/lc-3.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="lc-item">
-                <div class="lc-item-inner">
-                    <img src="img/logo-carousel/lc-4.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="lc-item">
-                <div class="lc-item-inner">
-                    <img src="img/logo-carousel/lc-5.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="lc-item">
-                <div class="lc-item-inner">
-                    <img src="img/logo-carousel/lc-6.png" alt="">
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- Logo Carousel End -->
-
-<!-- Contact Section Begin -->
-<section class="contact-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="contact-info">
-                    <div class="ci-item">
-                        <div class="ci-icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="ci-text">
-                            <h5>Address</h5>
-                            <p>160 Pennsylvania Ave NW, Washington, Castle, PA 16101-5161</p>
-                        </div>
-                    </div>
-                    <div class="ci-item">
-                        <div class="ci-icon">
-                            <i class="fa fa-mobile"></i>
-                        </div>
-                        <div class="ci-text">
-                            <h5>Phone</h5>
-                            <ul>
-                                <li>125-711-811</li>
-                                <li>125-668-886</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="ci-item">
-                        <div class="ci-icon">
-                            <i class="fa fa-headphones"></i>
-                        </div>
-                        <div class="ci-text">
-                            <h5>Support</h5>
-                            <p>Support.aler@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="cs-map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735515.5813275519!2d-80.41163541934742!3d43.93644386501528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882a55bbf3de23d7%3A0x3ada5af229b47375!2sMono%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1583262687289!5m2!1sen!2sbd"
-            height="450" style="border:0;" allowfullscreen=""></iframe>
-    </div>
-</section>
 <!-- Contact Section End -->
 
 <jsp:include page="rodape.jsp"/>
