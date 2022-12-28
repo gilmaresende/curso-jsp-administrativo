@@ -11,13 +11,15 @@
             </div>
             <div class="col-lg-4 col-md-6 mix all house">
                 <div class="property-item">
-                    <div class="pi-pic set-bg" data-setbg="img/property/property-1.jpg">
-                        <div class="label">Para Aluguel</div>
-                    </div>
+                    <a href="imovel-detalhes.jsp">
+                        <div class="pi-pic set-bg" data-setbg="img/property/property-1.jpg">
+                            <div class="label">Para Aluguel</div>
+                        </div>
+                    </a>
                     <div class="pi-text">
                         <a title="Enviar Mensagem" href="" data-toggle="modal" data-target="#modalMensagemImovel" class="heart-icon"><span class="icon_heart_alt"></span></a>
                         <div class="pt-price">R$ 889.0<span>/mês</span></div>
-                        <h5><a href="#">Apartamento 3 Quartos</a></h5>
+                        <h5><a href="imovel-detalhes.jsp">Apartamento 3 Quartos</a></h5>
                         <p><span class="icon_pin_alt"></span>Endereço do Imóvel</p>
                         <ul>
                             <li><i class="fa fa-object-group"></i> 120 m²</li>
@@ -39,6 +41,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -73,6 +76,13 @@
                         </div>
                     </div>
                 </div>
+
+                <!--fim card de imoveis-->
+                <div class="col-lg-12">
+                    <div class="loadmore-btn">
+                        <a href="#">Paginação</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -80,11 +90,41 @@
 </section>
 <!-- Property Section End -->
 
+
+
 <jsp:include page="filtro-imoveis.jsp"/>
 
 <jsp:include page="rodape.jsp"/>
 
 
+<!-- Modal Mensagem Imovel-->
+<div class="modal fade" data-backdrop="static" id="modalMensagemImovel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Enviar Mensagem</h5>
+                <button id="btn-cancelar-dismiss" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="cc-form">
+                    <div class="group-input">
+                        <input type="text" placeholder="Nome">
+                        <input id="telefone" type="text" placeholder="Telefone">
+                        <input type="email" placeholder="Email">
+
+                    </div>
+                    <textarea placeholder="Comentário"></textarea>
+                    <div align="right">
+                        <button id="btn-enviar" type="submit" class="btn btn-info">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
 

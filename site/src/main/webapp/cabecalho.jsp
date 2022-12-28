@@ -73,6 +73,7 @@
 
         <!-- Header Section Begin -->
         <header class="header-section">
+            <span class="btn-logar "><a class="text-secondary" href="sistema"><i class="fa fa-unlock"></i></a></span>
             <div class="hs-top">
                 <div class="container">
                     <div class="row">
@@ -86,9 +87,9 @@
                                 <ul>
                                     <li><i class="icon_mail_alt"></i><%=email%></li>
                                     <li>
-                                      
+
                                         <a class="text-dark" href="http://api.whatsapp.com/send?1=pt_BR&phone=<%=whatsappLink%>" target="_blank">
-                                           <i class="fa fa-whatsapp"></i>    <%=whatsapp%>
+                                            <i class="fa fa-whatsapp"></i>    <%=whatsapp%>
                                         </a>
                                         <span><%=telFixo%></span>
                                     </li>
